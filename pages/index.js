@@ -82,8 +82,8 @@ class BlogIndex extends React.Component {
 
         <section className="post-list">
           <h2 style={{
-            marginTop: 0,
-            marginBottom: 40,
+            marginTop: 10,
+            marginBottom: 60,
             fontWeight: 300,
             fontSize: 29
           }}>

@@ -15,8 +15,8 @@ body {
 }
 
 .love {
-  padding-bottom: 60px;
-  padding-top: 40px;
+  padding-bottom: 80px;
+  padding-top: 60px;
   color: #aaa;
   font-weight: 200;
   text-align: center;
@@ -24,8 +24,8 @@ body {
 }
 
 .load-more {
-  padding-top: 40px;
-  padding-bottom: 60px;
+  padding-top: 60px;
+  padding-bottom: 80px;
   font-size: 16px;
   color: #aaa;
   font-weight: 500;
