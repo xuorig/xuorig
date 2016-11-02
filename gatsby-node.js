@@ -1,8 +1,8 @@
-import fs from 'fs-extra-promise'
-import sm from 'sitemap'
+var fs = require('fs-extra-promise') //install this package
+var sm = require('sitemap') // install this package
 
 function pagesToSitemap(pages) {
-  const urls = pages.map((p) => {
+  var urls = pages.map(function(p) {
     if (p.path !== undefined) {
       return {
         url: p.path,
@@ -12,23 +12,25 @@ function pagesToSitemap(pages) {
     }
   })
   // remove undefined (template pages)
-  return urls.filter(u => u !== undefined)
+  return urls.filter(function(u) { return u !== undefined})
 }
 
 function generateSiteMap(pages) {
-  const sitemap = sm.createSitemap({
-    hostname: 'https://www.example.com',
+  var sitemap = sm.createSitemap({
+    hostname: 'http://mgiroux.me',
     cacheTime: '60000',
     urls: pagesToSitemap(pages),
   })
+
   console.log('Generating sitemap.xml')
+
   fs.writeFileSync(
     `${__dirname}/public/sitemap.xml`,
     sitemap.toString()
   )
 }
 
-export function postBuild(pages, callback) {
+module.exports.postBuild = function(pages, callback) {
   generateSiteMap(pages)
   callback()
 }
