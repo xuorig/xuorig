@@ -8,31 +8,19 @@ import { config } from 'config'
 import include from 'underscore.string/include'
 import Profile from 'components/Profile'
 import PostItem from 'components/PostItem'
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group'
 
 import '../css/global.css';
 
 class BlogIndex extends React.Component {
   constructor(props) {
     super(props);
+
     this.state = {
       postCount: 4
     }
 
     this.onLoadMore = this.loadMore.bind(this);
-  }
-
-  componentDidMount() {
-    window.addEventListener("scroll", this.handleScroll.bind(this));
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener("scroll", this.handleScroll.bind(this));
-  }
-
-  handleScroll() {
-    if (window.pageYOffset + window.innerHeight >= document.body.offsetHeight - 100) {
-      this.loadMore();
-    }
   }
 
   loadMore() {
@@ -68,6 +56,18 @@ class BlogIndex extends React.Component {
 
     posts = posts.slice(0, this.state.postCount);
 
+    let endContent;
+
+    if (this.state.postCount < sortedPosts.length - 1) {
+      endContent = (<div className="load-more">
+        Haven't found what you're looking for? <button onClick={this.onLoadMore}>Load More!</button>
+      </div>)
+    } else {
+      endContent = (<div className="love">
+        <span>You've reached the end. Made with ❤️ in Montreal</span>
+      </div>)
+    }
+
     return (
       <div className="wrapper">
         <Helmet
@@ -89,12 +89,18 @@ class BlogIndex extends React.Component {
           }}>
             Recent Posts
           </h2>
-          {posts}
-        </section>
 
-        <div className="love">
-          <span>Made with ❤️ in Montreal</span>
-        </div>
+		  <ReactCSSTransitionGroup
+			transitionName="post-list__item"
+			transitionEnterTimeout={500}
+			transitionLeaveTimeout={300}
+            transitionAppear={true}
+            transitionAppearTimeout={500}>
+			{posts}
+		  </ReactCSSTransitionGroup>
+
+          {endContent}
+        </section>
       </div>
     )
   }

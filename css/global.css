@@ -15,12 +15,37 @@ body {
 }
 
 .love {
-  padding-top: 40px;
   padding-bottom: 60px;
+  padding-top: 40px;
   color: #aaa;
   font-weight: 200;
   text-align: center;
   margin: 0 auto;
+}
+
+.load-more {
+  padding-top: 40px;
+  padding-bottom: 60px;
+  font-size: 16px;
+  color: #aaa;
+  font-weight: 500;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.load-more button {
+  font-size: 16px;
+  font-weight: bold;
+  color: #D64292;
+  background:none;
+  border:none;
+  margin:0;
+  padding:0;
+  cursor: pointer;
+}
+
+.load-more button:hover {
+  text-decoration: underline;
 }
 
 .purple {
