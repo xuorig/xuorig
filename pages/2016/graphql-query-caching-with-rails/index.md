@@ -97,15 +97,15 @@ I wanted to have some logs while I tested so I chose the the longer way!
 
 When a first query is sent to the server, as expected, we have to parse it:
 
-<img src="/assets/images/nocachelog.png"/>
+![No Cache Logs](./nocachelog.png)
 
-<img src="/assets/images/nocachetime.png"/>
+![No Cache Time](./nocachetime.png)
 
 As you can see, it took about `0.065` to parse, and execute the Query. Can we do much better with caching ? Let's see. The next request is the exact same query, I simply hit refresh:
 
-<img src="/assets/images/cachedlog.png"/>
+![Cache Logs](./cachedlog.png)
 
-<img src="/assets/images/cachedtime.png"/>
+![Cache Time](./cachedtime.png)
 
 `0.007`. Much faster since we did not have to parse the query string this time. Imagine bigger queries!
 

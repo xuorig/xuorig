@@ -23,6 +23,9 @@ class MarkdownWrapper extends React.Component {
       <div className="wrapper markdown">
         <Helmet
           title={title}
+          meta={[
+            {"name": "description", "content": post.description}
+          ]}
         />
         <h1 className="post__title">{post.title}</h1>
         <p className="post__date">{formattedDate}</p>

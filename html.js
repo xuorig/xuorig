@@ -30,6 +30,7 @@ module.exports = React.createClass({
           {head.title.toComponent()}
           {head.meta.toComponent()}
           <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700" rel="stylesheet"/>
+          <link rel="author" href="https://plus.google.com/103412889445491341044"/>
           <script
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB10DGDrJaB7IauMg99tM97DUH9QC4rcO8">
           </script>

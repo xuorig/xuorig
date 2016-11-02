@@ -179,7 +179,7 @@ onActionCableMessage(event) {
 
 Basically, we build a query and it's respective payload, and make relay update it's store using `handleQueryPayload`. Here we simply update the pull request title for the example. Take a look at the result:
 
-<img src="/assets/images/realtimerelay.gif"/>
+![Realtime Demo](./realtimerelay.gif)
 
 That's it! We have real time updates in our Relay App using Rails ActionCable :)
 

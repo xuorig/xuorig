@@ -5,6 +5,10 @@ based on dark.css by Ivan Sagalaev
 
 */
 
+.markdown img {
+  width: 100%;
+}
+
 .markdown p, ul, li {
   color: #666;
   -webkit-font-smoothing: antialiased;
