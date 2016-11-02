@@ -1,0 +1,19 @@
+.post {
+
+}
+
+.post__title {
+  text-align: center;
+  font-weight: 200;
+  color: #222;
+  margin-top: 0px;
+}
+
+p.post__date {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #aaa;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}

@@ -1,0 +1,49 @@
+/*
+ Post List
+*/
+
+.post-list {
+  padding: 10px;
+}
+
+.post-list__item {
+  text-decoration: none;
+  display: block;
+  padding-left: 20px;
+  border-left: 4px solid #aaa;
+  min-height: 100px;
+  margin-bottom: 80px;
+}
+
+.post-list__item:last-child {
+  margin-bottom: 0px;
+}
+
+.post-list__item:hover {
+  border-left: 4px solid #D64292;
+}
+
+.post-list__item__header {
+  margin-top: 26px;
+  display: flex;
+}
+
+.post-list__item__header__title {
+  flex: 4;
+  font-size: 20px;
+  color: #222;
+  margin-top: 0px;
+  margin-bottom: 8px;
+}
+
+.post-list__item__header__date {
+  flex: 1;
+  color: #aaa;
+  text-align: right;
+}
+
+.post-list__item__desc {
+  color: #aaa;
+  font-size: 18px;
+  margin-top: 0px;
+}

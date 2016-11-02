@@ -1,0 +1,41 @@
+/*
+Globals
+*/
+
+body {
+  margin: 0px;
+  border-top: 8px solid #D64292;
+  font-family: 'Raleway', sans-serif;
+}
+
+.wrapper {
+  padding: 60px 40px 0px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.love {
+  padding-top: 40px;
+  padding-bottom: 60px;
+  color: #aaa;
+  font-weight: 200;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.purple {
+  color: #D64292;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  color: #D64292;
+}
+
+hr {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 80%;
+  border: 1px solid #eee;
+}
