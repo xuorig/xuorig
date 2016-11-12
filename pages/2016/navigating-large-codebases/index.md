@@ -90,15 +90,15 @@ On the subsequent passes, I'll start going into some of those branches. Since   
 
 I'll admit that point is a bit extreme and even I don't always follow it 100%. But just trying to follow it can yield awesome results: try to never use a Class, Function, Library, API, without knowing a bit of it's internals.
 
-In theory we should only care about the interface, and that's enough to write great software. But for personal development, trying to dive into everything to use helps you learn so much faster in my experience.
+In theory, the interface is enough to write great software. But in my experience, for personal development, trying to dive into everything you use helps you learn much faster.
 
 ## Bonus: Time
 
 ![Time Gif](https://media.giphy.com/media/xTiQywlOn0gKyz0l56/giphy.gif)
 
-Understanding complicated code bases has no shortcuts. These tricks help me make sense out of them much faster, but in the end, you really just need to put time aside to really understand what you work on or what you use.
+Understanding complex code bases has no shortcuts. These tricks help me make sense out of them much faster, but in the end, you really just need to put time aside to really understand what you work on or what you use.
 
-Hope these tricks help you and if not, please share what worked for you! As always, you can find me on Twitter [@\_\_xuorig\_\_][twit] or [Github][xuo]
+Hope these tricks will help you! If not, please share what has worked for you! As always, you can find me on [Twitter][twit] and [Github][xuo]!
 
 [xuo]: http://github.com/xuorig
 [twit]: https://twitter.com/__xuorig__
