@@ -20,7 +20,7 @@ class SectionHeader extends React.Component {
             {subtitle}
           </h2>
           <p>
-            Or go back to <Link to={prefixLink('/')}>Recent Posts</Link> ✍️
+            Or go back to <Link to={prefixLink('/')}>Home</Link> 🏠
           </p>
         </div>
       </header>
