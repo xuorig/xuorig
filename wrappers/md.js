@@ -29,6 +29,8 @@ class MarkdownWrapper extends React.Component {
         />
         <h1 className="post__title">{post.title}</h1>
         <p className="post__date">{formattedDate}</p>
+        <p className="post__author">by <Link to={'/'}>Marc-Andre Giroux</Link></p>
+
         <div dangerouslySetInnerHTML={{ __html: post.body }} />
 
         <p style={{textAlign: 'center', fontWeight: 'bold', marginTop: 30}}>Go back to <Link to={prefixLink('/')}>Recent Posts</Link> ✍️</p>

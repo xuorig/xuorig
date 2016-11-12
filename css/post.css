@@ -2,6 +2,15 @@
 
 }
 
+p.post__author {
+  font-size: 14px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  margin-top: 20px;
+  color: #aaa;
+}
+
 .post__title {
   text-align: center;
   font-weight: 200;
@@ -15,5 +24,4 @@ p.post__date {
   color: #aaa;
   text-align: center;
   margin: 0 auto;
-  margin-bottom: 40px;
 }
