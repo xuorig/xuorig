@@ -22,7 +22,8 @@ export default [{
   lat: 37.7576793,
   long: -122.50764,
   url: 'http://graphqlsummit.com/',
-  slides: 'https://speakerdeck.com/xuorig/graphql-at-shopify'
+  slides: 'https://speakerdeck.com/xuorig/graphql-at-shopify',
+  video: 'https://youtu.be/Wlu_PWCjc6Y'
 }, {
   name: 'From REST to GraphQL',
   event: 'FullStack Toronto',
