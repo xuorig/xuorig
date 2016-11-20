@@ -14,48 +14,48 @@ Relay Mutations are defined by extending the `Relay.Mutation` base type. We decl
 a class that defines... a *lot* of things ;)
 
 ```javascript
-class AddProductMutation extends Relay.Mutation {
+class AddItemMutation extends Relay.Mutation {
   // Our getMutation function should return a GraphQL query
   // that contains our mutation operation. In our case we're interested
-  // with the addProduct mutation.
+  // with the addItem mutation.
   getMutation() {
-    return Relay.QL`mutation {addProduct}`;
+    return Relay.QL`mutation {addItem}`;
   }
 
   // getVariables is straightforward. It should return any variables our mutation
   // might need.
   getVariables() {
-    return {product: this.props.product};
+    return {item: this.props.item};
   }
 
   // the getFatQuery function is the tricky one. A "fat query" is a GraphQL like
   // query that represents every field in your data model that could change as
   // a result of a mutation.
-  // For example, when we add a product, our `products` should change.
+  // For example, when we add an item, our `collection` should change.
   getFatQuery() {
     return Relay.QL`
-      fragment on AddProductPayload {
-        shop { products }
-        newProductEdge
+      fragment on AddItemPayload {
+        collection { item }
+        newItemEdge
       }
     `;
   }
 
   // The getConfigs method should return an array of config objects. These
-  // config objects instruct how Relay should react to our AddProductPayload
+  // config objects instruct how Relay should react to our newItemEdge
   // after the mutation has been done.
   getConfigs() {
     return [{
       type: 'RANGE_ADD',
-      parentName: 'shop',
-      parentID: this.props.shop.id,
-      connectionName: 'products',
-      edgeName: 'newProductEdge',
+      parentName: 'parent',
+      parentID: this.props.parent.id,
+      connectionName: 'collection',
+      edgeName: 'newItemEdge',
       rangeBehaviors: {
-        // When the products connection is not under the influence
+        // When the collection connection is not under the influence
         // of any call, append the ship to the end of the connection
         '': 'append',
-        // Prepend the product, wherever the connection is sorted by most recent
+        // Prepend the edge, wherever the connection is sorted by most recent
         'orderby(newest)': 'prepend',
       },
     }];
@@ -67,11 +67,11 @@ To execute such mutations, we usually use the `relay.commitUpdate` function. In 
 would look like this:
 
 ```javascript
-onProductAdd = (product) => {
+onItemAdd = (item) => {
   // To perform a mutation, pass an instance of one to
   // `this.props.relay.commitUpdate`
   this.props.relay.commitUpdate(
-    new AddProductMutation({product})
+    new AddItemMutation({item})
   );
 }
 ```
