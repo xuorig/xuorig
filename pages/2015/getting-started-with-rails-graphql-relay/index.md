@@ -115,6 +115,13 @@ class Blog < ActiveRecord::Base
 end
 ```
 
+and to the Author model:
+```ruby
+class Blog < ActiveRecord::Base
+  belongs_to :author
+end
+```
+
 
 Alright it's time to bring GraphQL in. We're going to be using [rmosolgo's][rmo] [GraphQL-ruby][graphruby] which is an amazing gem to build our GraphQL Schema. Add the gem to your Gemfile.
 
@@ -185,13 +192,16 @@ Let's create the GraphQL Schema with our newly created types, at the root level 
 
 ```ruby
 # app/graph/blog_schema.rb
-BlogSchema = GraphQL::Schema.new(query: QueryType)
+BlogSchema = GraphQL::Schema.define do
+  query QueryType
+end
 ```
 
 The only thing left now is exposing that Schema through an end point. The best way to do that is to handle POST requests with a GraphQL query as the data. Lets create `QueriesController` which will handle these POST requests.
 
 ```ruby
 class QueriesController < ApplicationController
+  skip_before_action :verify_authenticity_token
   def create
     query_string = params[:query]
     query_variables = params[:variables] || {}
