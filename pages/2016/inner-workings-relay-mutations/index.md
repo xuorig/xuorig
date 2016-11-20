@@ -1,5 +1,5 @@
 ---
-title:  "The inner workings of Relay Mutations (part 1)"
+title:  "The Inner Workings of Relay Mutations (part 1)"
 date:   2016-11-20 10:00:00
 description: How relay interprets your fatQuery and configurations
 ---
