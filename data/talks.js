@@ -1,4 +1,12 @@
 export default [{
+  name: 'GraphQL @ Shopify',
+  event: 'Web à Québec',
+  location: 'Montreal, Canada',
+  date: '2017-04-04',
+  lat: 46.816996,
+  long: -71.200515,
+  url: 'https://webaquebec.org/programmation/graphql-shopify',
+}, {
   name: 'Exploring GraphQL',
   event: 'ConFoo Montreal',
   location: 'Montreal, Canada',
