@@ -1,4 +1,12 @@
 export default [{
+  name: 'TBD',
+  event: 'GraphQL Summit 2017',
+  location: 'San Francisco',
+  date: '2017-10-25',
+  lat: 37.7576793,
+  long: -122.50764,
+  url: 'https://summit.graphql.com/',
+}, {
   name: 'GraphQL @ Shopify',
   event: 'Web à Québec',
   location: 'Montreal, Canada',

@@ -48,7 +48,7 @@ class Profile extends React.Component {
           <h2 className="me__profile__desc">
             <span className="purple">
               {this.state.x}x
-            </span> Developer @Shopify, GraphQL Enthusiast and Speaker
+            </span> platform interface engineer <a href="https://github.com">@github</a> - GraphQL Enthusiast - Speaker.
           </h2>
 
           <p>
