@@ -1,11 +1,11 @@
 export default [{
-  name: 'TBD',
+  name: 'Panel on Public GraphQL APIs',
   event: 'GraphQL Summit 2017',
   location: 'San Francisco',
   date: '2017-10-25',
   lat: 37.7576793,
   long: -122.50764,
-  url: 'https://summit.graphql.com/',
+  url: 'https://summit.graphql.com/speakers.html#marc-andre-giroux',
 }, {
   name: 'GraphQL @ Shopify',
   event: 'Web à Québec',
