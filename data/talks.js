@@ -6,6 +6,7 @@ export default [{
   lat: 37.7576793,
   long: -122.50764,
   url: 'https://summit.graphql.com/speakers.html#marc-andre-giroux',
+  video: 'https://www.youtube.com/watch?v=zuutqu2YF3E',
 }, {
   name: 'GraphQL @ Shopify',
   event: 'Web à Québec',
