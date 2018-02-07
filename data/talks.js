@@ -1,4 +1,12 @@
 export default [{
+  name: 'How GitHub enables 24 million users to collaborate',
+  event: 'Web a Quebec',
+  location: 'Quebec, Canada',
+  date: '2018-04-11',
+  lat: 46.816996,
+  long: -71.200515,
+  url: 'https://webaquebec.org/programmation/graphql-shopify',
+}, {
   name: 'Panel on Public GraphQL APIs',
   event: 'GraphQL Summit 2017',
   location: 'San Francisco',
