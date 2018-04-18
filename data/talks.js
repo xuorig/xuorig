@@ -1,11 +1,19 @@
 export default [{
+  name: 'Continuous Evolution of APIs @ GitHub',
+  event: 'Montreal Ruby',
+  location: 'Montreal, Canada',
+  date: '2018-04-17',
+  lat: 46.816996,
+  long: -71.200515,
+  url: 'https://www.montrealrb.com/events/31-april-meetupw',
+}, {
   name: 'How GitHub enables 24 million users to collaborate',
   event: 'Web a Quebec',
   location: 'Quebec, Canada',
   date: '2018-04-11',
   lat: 46.816996,
   long: -71.200515,
-  url: 'https://webaquebec.org/programmation/graphql-shopify',
+  url: 'https://webaquebec.org/programmation/comment-github-permet-l-a-24-millions-dutilisateurs-de-collaborer-ensemble',
 }, {
   name: 'Panel on Public GraphQL APIs',
   event: 'GraphQL Summit 2017',
