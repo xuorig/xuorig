@@ -1,4 +1,30 @@
-export default [{
+export default [
+  {
+    name: 'GraphQL Radio',
+    event: 'GraphQL Radio Podcast',
+    location: 'N/A',
+    date: '2018-07-01',
+    lat: 46.816996,
+    long: -71.200515,
+    url: '#',
+  }, {
+    name: 'Mon Carnet',
+    event: 'Mon Carnet Podcast [French]',
+    location: 'Montreal, Canada',
+    date: '2018-05-04',
+    lat: 46.816996,
+    long: -71.200515,
+    url: 'https://soundcloud.com/moncarnet/mon-carnet-180504',
+  },
+  {
+    name: 'Continuous Evolution of APIs @ GitHub',
+    event: 'Montreal Ruby',
+    location: 'Montreal, Canada',
+    date: '2018-04-17',
+    lat: 46.816996,
+    long: -71.200515,
+    url: 'https://www.montrealrb.com/events/31-april-meetupw',
+  }, {
   name: 'Continuous Evolution of APIs @ GitHub',
   event: 'Montreal Ruby',
   location: 'Montreal, Canada',
