@@ -1,5 +1,33 @@
 export default [
   {
+    name: 'GraphQL Schema Design @ Scale',
+    event: 'GraphQL Summit',
+    location: 'San Francisco, USA',
+    date: '2018-11-06',
+    lat: 37.7576793,
+    long: -122.50764,
+    url: 'https://summit.graphql.com/',
+  },
+  {
+    name: 'GraphQL Schema Design Workshop',
+    event: 'GraphQL Finland',
+    location: 'Helsinki, Finland',
+    date: '2018-10-17',
+    lat: 60.170039,
+    long: 24.941308,
+    url: 'https://graphql-finland.fi/workshops/#graphql-schema-design',
+  },
+  {
+    name: 'Continuous Evolution of GraphQL Schemas @ GitHub',
+    event: 'API Strategy & Practice Conference',
+    location: 'Nashville, Tennessee',
+    date: '2018-09-25',
+    lat: 36.164413,
+    long: -86.781273,
+    url: 'https://apistrat18.sched.com/event/FTQl/continuous-evolution-of-graphql-schemas-github-marc-andre-giroux-github',
+    slides: 'https://speakerdeck.com/xuorig/continuous-evolution-of-graphql-schemas-at-github',
+  },
+  {
     name: 'GraphQL Radio',
     event: 'GraphQL Radio Podcast',
     location: 'N/A',
