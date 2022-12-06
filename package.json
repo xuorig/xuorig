@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "fs-extra-promise": "^0.4.1",
-    "gatsby": "^0.12.6",
+    "gatsby": "^5.2.0",
     "lodash": "^4.15.0",
     "moment": "^2.15.2",
     "react-addons-css-transition-group": "^15.3.2",
@@ -23,7 +23,7 @@
     "underscore.string": "^3.2.3"
   },
   "devDependencies": {
-    "gh-pages": "^0.11.0"
+    "gh-pages": "^4.0.0"
   },
   "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
   "keywords": [
